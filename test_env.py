@@ -27,4 +27,3 @@ v = torch.randn(1, 16, 2, 64, device="cuda", dtype=torch.float16)
 
 out = flash_attn_func(q, k, v, dropout_p=0.0, softmax_scale=None, causal=False)
 print("FlashAttention out:", out.shape)
-# EOF
